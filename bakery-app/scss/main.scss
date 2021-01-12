@@ -20,5 +20,26 @@ html {
   background: linear-gradient(rgba(black, 0.6), rgba(black, 0));
   background-size: cover;
   position: fixed;
+  top: 0;
   width: 100%;
+}
+.bakery-app {
+  margin-top: 10%;
+  width: 100%;
+}
+.test-btn {
+  position: fixed;
+  bottom: 2rem;
+}
+
+@keyframes test-animacija {
+  from {
+    transform: translateX(30rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.animation {
+  animation: test-animacija 2s;
 }

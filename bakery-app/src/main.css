@@ -23,6 +23,44 @@ html {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
   background-size: cover;
   position: fixed;
+  top: 0;
   width: 100%;
+}
+
+.bakery-app {
+  margin-top: 10%;
+  width: 100%;
+}
+
+.test-btn {
+  position: fixed;
+  bottom: 2rem;
+}
+
+@-webkit-keyframes test-animacija {
+  from {
+    -webkit-transform: translateX(30rem);
+            transform: translateX(30rem);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes test-animacija {
+  from {
+    -webkit-transform: translateX(30rem);
+            transform: translateX(30rem);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.animation {
+  -webkit-animation: test-animacija 2s;
+          animation: test-animacija 2s;
 }
 /*# sourceMappingURL=main.css.map */
