@@ -1,0 +1,24 @@
+@import "./config";
+html {
+  background: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.nav {
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  padding-left: 2rem;
+  padding-top: 10px;
+  height: 50px;
+  background: linear-gradient(rgba(black, 0.6), rgba(black, 0));
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+}

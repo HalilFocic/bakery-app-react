@@ -1,0 +1,28 @@
+html {
+  background: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.nav {
+  font-family: "Roboto";
+  color: white;
+  padding-left: 2rem;
+  padding-top: 10px;
+  height: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */
