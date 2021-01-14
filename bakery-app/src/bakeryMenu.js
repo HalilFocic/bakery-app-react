@@ -17,7 +17,7 @@ export default [
   {
     id: 2,
     title: "Pie",
-    price: 1,
+    price: 5,
     img: pie,
     amount: 0,
     text:
@@ -35,7 +35,7 @@ export default [
   {
     id: 4,
     title: "Muffin",
-    price: 1,
+    price: 1.5,
     img: muffin,
     amount: 0,
     text:
@@ -44,7 +44,7 @@ export default [
   {
     id: 5,
     title: "Cookies",
-    price: 1,
+    price: 0.5,
     img: cookies,
     amount: 0,
     text:
@@ -53,7 +53,7 @@ export default [
   {
     id: 6,
     title: "Doughnut",
-    price: 1,
+    price: 1.5,
     img: doughnut,
     amount: 0,
     text:

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useGlobalContext } from "./context";
 import BakeryItem from "./BakeryItem";
+import BakeryReceipt from "./BakeryReceipt";
 import "./main.css";
 const Bakery = () => {
   const { cart } = useGlobalContext();
@@ -11,6 +12,7 @@ const Bakery = () => {
           return <BakeryItem key={item.id} {...item} />;
         })}
       </div>
+      <BakeryReceipt />
     </div>
   );
 };

@@ -27,6 +27,7 @@ html {
 .bakery-app {
   margin-top: 10%;
   width: 100%;
+  display: flex;
 }
 .test-btn {
   position: fixed;
@@ -83,5 +84,17 @@ html {
       position: relative;
       top: 5px;
     }
+  }
+}
+.receipt {
+  padding: 1rem 0.3rem 1rem 0.3rem;
+  background: seashell;
+  color: rgb(97, 103, 109);
+  width: 20%;
+  &__title {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1.3rem;
+    text-transform: uppercase;
   }
 }
