@@ -1,9 +1,15 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import { useGlobalContext } from "./context";
+import BakeryItem from "./BakeryItem";
 const Bakery = () => {
+  const { cart } = useGlobalContext();
   return (
     <div className="bakery-app">
-      Bakery App
-      <h3>imati listu hrane i kada ce klikne da izbaci racun</h3>
+      <div className="bakery-grid">
+        {cart.map((item) => {
+          return <BakeryItem key={item.id} {...item} />;
+        })}
+      </div>
     </div>
   );
 };
