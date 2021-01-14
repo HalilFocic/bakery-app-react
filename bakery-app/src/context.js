@@ -1,5 +1,4 @@
 import React, { useState, useContext, useReducer, useEffect } from "react";
-import bakeryMenu from "./bakeryMenu";
 import reducer from "./reducer";
 import data from "./bakeryMenu";
 const AppContext = React.createContext();
@@ -19,6 +18,11 @@ const AppProvider = ({ children }) => {
   const decreaseAmount = (id) => {
     dispatch({ type: "DECREASE", id: id });
   };
+  useEffect(() => {
+    console.log("WOO");
+    dispatch({ type: "GET_TOTALS" });
+  }, [state.cart]);
+
   return (
     <AppContext.Provider
       value={{
