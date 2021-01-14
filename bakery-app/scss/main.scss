@@ -1,3 +1,4 @@
+$orange-color: #ff652f;
 @import "./config";
 html {
   background: url("background.jpg");
@@ -10,9 +11,9 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto";
 }
 .nav {
-  font-family: "Roboto";
   color: rgb(255, 255, 255);
   padding-left: 2rem;
   padding-top: 10px;
@@ -31,15 +32,56 @@ html {
   position: fixed;
   bottom: 2rem;
 }
+.bakery-grid {
+  width: 70%;
+  text-align: center;
+  &__item {
+    display: inline-block;
+    background: rgba(242, 242, 242, 0.8);
+    width: 250px;
+    margin: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 15px;
 
-@keyframes test-animacija {
-  from {
-    transform: translateX(30rem);
+    &__image {
+      width: 230px;
+      height: 100px;
+    }
+    &__title {
+      text-align: left;
+      color: $orange-color;
+      font-size: 1.2rem;
+      font-weight: bolder;
+      padding-left: 10px;
+    }
+    &__desc {
+      font-weight: 500;
+      font-size: 0.9rem;
+      padding: 0.3rem;
+      padding-left: 10px;
+      text-align: left;
+    }
+    &__buttons {
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+      margin: auto;
+    }
+    &__button {
+      margin-left: 10px;
+      margin-right: 10px;
+      width: 30px;
+      height: 30px;
+      border: 0;
+      font-size: 1rem;
+      border-radius: 50%;
+      background: $orange-color;
+      color: white;
+    }
+    &__amount {
+      font-weight: bolder;
+      position: relative;
+      top: 5px;
+    }
   }
-  to {
-    transform: translateX(0);
-  }
-}
-.animation {
-  animation: test-animacija 2s;
 }

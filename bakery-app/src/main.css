@@ -11,10 +11,10 @@ html {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Roboto";
 }
 
 .nav {
-  font-family: "Roboto";
   color: white;
   padding-left: 2rem;
   padding-top: 10px;
@@ -37,30 +37,66 @@ html {
   bottom: 2rem;
 }
 
-@-webkit-keyframes test-animacija {
-  from {
-    -webkit-transform: translateX(30rem);
-            transform: translateX(30rem);
-  }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
+.bakery-grid {
+  width: 70%;
+  text-align: center;
 }
 
-@keyframes test-animacija {
-  from {
-    -webkit-transform: translateX(30rem);
-            transform: translateX(30rem);
-  }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
+.bakery-grid__item {
+  display: inline-block;
+  background: rgba(242, 242, 242, 0.8);
+  width: 250px;
+  margin: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 15px;
 }
 
-.animation {
-  -webkit-animation: test-animacija 2s;
-          animation: test-animacija 2s;
+.bakery-grid__item__image {
+  width: 230px;
+  height: 100px;
+}
+
+.bakery-grid__item__title {
+  text-align: left;
+  color: #ff652f;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  padding-left: 10px;
+}
+
+.bakery-grid__item__desc {
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.3rem;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.bakery-grid__item__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+  margin: auto;
+}
+
+.bakery-grid__item__button {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  font-size: 1rem;
+  border-radius: 50%;
+  background: #ff652f;
+  color: white;
+}
+
+.bakery-grid__item__amount {
+  font-weight: bolder;
+  position: relative;
+  top: 5px;
 }
 /*# sourceMappingURL=main.css.map */
