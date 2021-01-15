@@ -4,7 +4,8 @@ import data from "./bakeryMenu";
 const AppContext = React.createContext();
 
 const initialState = {
-  cart: data,
+  items: data,
+  cart: [],
   total: 0,
   amount: 0,
 };
@@ -19,8 +20,11 @@ const AppProvider = ({ children }) => {
     dispatch({ type: "DECREASE", id: id });
   };
   useEffect(() => {
-    console.log("WOO");
+    console.log("State of cart changed!");
     dispatch({ type: "GET_TOTALS" });
+  }, [state.cart]);
+  useEffect(() => {
+    console.log("first item changed!");
   }, [state.cart]);
 
   return (

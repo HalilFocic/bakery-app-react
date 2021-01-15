@@ -4,11 +4,11 @@ import BakeryItem from "./BakeryItem";
 import BakeryReceipt from "./BakeryReceipt";
 import "./main.css";
 const Bakery = () => {
-  const { cart } = useGlobalContext();
+  const { items } = useGlobalContext();
   return (
     <div className="bakery-app">
       <div className="bakery-grid">
-        {cart.map((item) => {
+        {items.map((item) => {
           return <BakeryItem key={item.id} {...item} />;
         })}
       </div>

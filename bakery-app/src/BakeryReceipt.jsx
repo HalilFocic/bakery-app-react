@@ -7,13 +7,14 @@ const BakeryReceipt = () => {
     <div className="receipt">
       <div className="receipt__items">
         <div className="receipt__title">Your receipt</div>
-        {cart.map((item) => {
-          if (item.amount > 0) {
-            return <ReceiptItem {...item} key={item.id} />;
-          } else {
-            return null;
-          }
-        })}
+        {cart.length > 0 &&
+          cart.map((item) => {
+            if (item.amount > 0) {
+              return <ReceiptItem {...item} key={item.id} />;
+            } else {
+              return null;
+            }
+          })}
       </div>
       <div className="receipt__total">
         Total <span>${total}</span>
