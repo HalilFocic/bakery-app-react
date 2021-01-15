@@ -4,7 +4,7 @@ import doughnut from "./images/doughnut.jpg";
 import croissant from "./images/croissant.jpg";
 import cookies from "./images/cookies.jpg";
 import muffin from "./images/muffin.jpg";
-export default [
+const data = [
   {
     id: 1,
     title: "Bread",
@@ -60,3 +60,4 @@ export default [
       "Dummy text to be displayed while I think of something else as description",
   },
 ];
+export default data;
