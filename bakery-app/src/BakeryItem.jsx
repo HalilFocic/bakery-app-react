@@ -22,6 +22,7 @@ const BakeryItem = ({ id, title, price, img, amount, text }) => {
         >
           +
         </button>
+        <div className="bakery-grid__item__price">${price * amount}</div>
       </div>
     </article>
   );

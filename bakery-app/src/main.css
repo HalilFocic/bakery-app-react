@@ -103,6 +103,14 @@ html {
   top: 5px;
 }
 
+.bakery-grid__item__price {
+  position: relative;
+  left: 30px;
+  top: 5px;
+  font-size: 1.4rem;
+  color: black;
+}
+
 .receipt {
   padding: 1rem;
   background: seashell;
@@ -144,5 +152,34 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media only screen and (max-width: 720px) {
+  .bakery-app {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .bakery-grid {
+    width: 100%;
+  }
+  .bakery-grid__item {
+    width: 80%;
+  }
+  .bakery-grid__item__image {
+    height: 200px;
+    width: 95%;
+  }
+  .receipt {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 2rem;
+    text-align: left;
+  }
+  .receipt__total {
+    margin-top: 2rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
