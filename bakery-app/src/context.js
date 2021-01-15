@@ -20,11 +20,7 @@ const AppProvider = ({ children }) => {
     dispatch({ type: "DECREASE", id: id });
   };
   useEffect(() => {
-    console.log("State of cart changed!");
     dispatch({ type: "GET_TOTALS" });
-  }, [state.cart]);
-  useEffect(() => {
-    console.log("first item changed!");
   }, [state.cart]);
 
   return (
