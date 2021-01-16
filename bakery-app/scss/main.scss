@@ -43,7 +43,13 @@ html {
     margin: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 15px;
-
+    animation: loadItem 1s;
+    animation-fill-mode: backwards;
+    @for $i from 1 through 6 {
+      &:nth-child(#{$i}) {
+        animation-delay: $i * 300ms;
+      }
+    }
     &__image {
       width: 230px;
       height: 100px;
@@ -111,6 +117,7 @@ html {
       display: grid;
       grid-template-columns: 5fr 1fr 1fr;
       font-size: 1.3rem;
+      animation: receipt-animation 1s;
     }
   }
   &__total {
@@ -147,4 +154,21 @@ html {
 .bakery-grid-down {
   display: flex;
   width: 100%;
+}
+@keyframes loadItem {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes receipt-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

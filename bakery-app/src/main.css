@@ -52,6 +52,40 @@ html {
   margin: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 15px;
+  -webkit-animation: loadItem 1s;
+          animation: loadItem 1s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.bakery-grid__item:nth-child(1) {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.bakery-grid__item:nth-child(2) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.bakery-grid__item:nth-child(3) {
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+}
+
+.bakery-grid__item:nth-child(4) {
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+
+.bakery-grid__item:nth-child(5) {
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
+}
+
+.bakery-grid__item:nth-child(6) {
+  -webkit-animation-delay: 1800ms;
+          animation-delay: 1800ms;
 }
 
 .bakery-grid__item__image {
@@ -139,6 +173,8 @@ html {
   -ms-grid-columns: 5fr 1fr 1fr;
       grid-template-columns: 5fr 1fr 1fr;
   font-size: 1.3rem;
+  -webkit-animation: receipt-animation 1s;
+          animation: receipt-animation 1s;
 }
 
 .receipt__total {
@@ -185,5 +221,41 @@ html {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+}
+
+@-webkit-keyframes loadItem {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes loadItem {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes receipt-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes receipt-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */
