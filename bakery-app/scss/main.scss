@@ -66,7 +66,6 @@ html {
       display: flex;
       justify-content: space-around;
       width: 50%;
-      margin: auto;
     }
     &__button {
       margin-left: 10px;
@@ -85,9 +84,7 @@ html {
       top: 5px;
     }
     &__price {
-      position: relative;
-      left: 30px;
-      top: 5px;
+      width: 50%;
       font-size: 1.4rem;
       color: black;
     }
@@ -146,4 +143,8 @@ html {
       margin-top: 2rem;
     }
   }
+}
+.bakery-grid-down {
+  display: flex;
+  width: 100%;
 }
